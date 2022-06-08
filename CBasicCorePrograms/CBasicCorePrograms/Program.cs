@@ -14,6 +14,7 @@
             Console.WriteLine("press 7 to perform swap number");
             Console.WriteLine("Press 8 to perform vevn or odd");
             Console.WriteLine("Press 9 to vowel or constrant");
+            Console.WriteLine("press 10 to perform largest number");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -52,6 +53,11 @@
                 case 9:
                     VowelOrConsonant vowel = new VowelOrConsonant();
                     vowel.vowel();
+                    break;
+                case 10:
+                    LargestNumber LagNum = new LargestNumber();
+                    LagNum.LargestNum();
+
                     break;
             }
         }

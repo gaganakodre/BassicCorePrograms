@@ -8,9 +8,11 @@ namespace CBasicCorePrograms
 {
     internal class VowelOrConsonant
     {
-        Console.Write("Input an Alphabet A-Z or a-z : ");
+        public void vowel()
+        {
+            Console.Write("Input an Alphabet A-Z or a-z : ");
             int ch = Convert.ToChar(Console.ReadLine().ToLower());
-        int i = ch;
+            int i = ch;
             switch (ch)
             {
                 case 'a':
@@ -32,6 +34,7 @@ namespace CBasicCorePrograms
                     Console.WriteLine("The Alphabet is not a vowel");
                     break;
             }
-}
+        }
+
     }
 }
