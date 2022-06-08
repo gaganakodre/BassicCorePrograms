@@ -8,6 +8,7 @@
             Console.WriteLine("Press 1 to perform the filp coin and percentage of Head and Tail");
             Console.WriteLine("Press 2 to perform leap year");
             Console.WriteLine("Press 3 to perform power of 2");
+            Console.WriteLine("Press 4 to perform Hormonic Fuction");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -20,8 +21,12 @@
                     leapYear.Leap_Year();
                     break;
                 case 3:
-                    PowerTwo power = new PowerTwo();
+                    PowerOfTwo power = new PowerOfTwo();
                     power.Power_Of_Two();
+                    break;
+                case 4:
+                    Harmonic harmonic = new Harmonic();
+                    harmonic.Hormonics();
                     break;
             }
         }
