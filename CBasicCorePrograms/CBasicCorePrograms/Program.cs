@@ -11,6 +11,7 @@
             Console.WriteLine("Press 4 to perform Hormonic Fuction");
             Console.WriteLine("press 5 to perform Factors");
             Console.WriteLine("Press 6 to perform the Quotient remainder");
+            Console.WriteLine("press 7 to perform swap number");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -37,6 +38,10 @@
                 case 6:
                     QutionentAndRemainder quotient = new QutionentAndRemainder();
                     quotient.Quotient();
+                    break;
+                case 7:
+                    SwapTwoNumber swapnum = new SwapTwoNumber();
+                    swapnum.Quotient();
                     break;
             }
         }
