@@ -9,6 +9,7 @@
             Console.WriteLine("Press 2 to perform leap year");
             Console.WriteLine("Press 3 to perform power of 2");
             Console.WriteLine("Press 4 to perform Hormonic Fuction");
+            Console.WriteLine("press 5 to perform Factors");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -25,8 +26,12 @@
                     power.Power_Of_Two();
                     break;
                 case 4:
-                    Harmonic harmonic = new Harmonic();
+                    HarmonicNumber harmonic = new HarmonicNumber();
                     harmonic.Hormonics();
+                    break;
+                case 5:
+                    Factor1 factor = new Factor1();
+                    factor.factor();
                     break;
             }
         }
