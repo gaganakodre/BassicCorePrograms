@@ -13,6 +13,7 @@
             Console.WriteLine("Press 6 to perform the Quotient remainder");
             Console.WriteLine("press 7 to perform swap number");
             Console.WriteLine("Press 8 to perform vevn or odd");
+            Console.WriteLine("Press 9 to vowel or constrant");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -47,6 +48,10 @@
                 case 8:
                     EvenOrOdd even = new EvenOrOdd();
                     even.EvenorOdd();
+                    break;
+                case 9:
+                    VowelOrConsonant vowel = new VowelOrConsonant();
+                    vowel.vowel();
                     break;
             }
         }
