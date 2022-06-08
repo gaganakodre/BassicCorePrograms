@@ -10,6 +10,7 @@
             Console.WriteLine("Press 3 to perform power of 2");
             Console.WriteLine("Press 4 to perform Hormonic Fuction");
             Console.WriteLine("press 5 to perform Factors");
+            Console.WriteLine("Press 6 to perform the Quotient remainder");
             int problem = Convert.ToInt32(Console.ReadLine());
             switch (problem)
             {
@@ -32,6 +33,10 @@
                 case 5:
                     Factor1 factor = new Factor1();
                     factor.factor();
+                    break;
+                case 6:
+                    QutionentAndRemainder quotient = new QutionentAndRemainder();
+                    quotient.Quotient();
                     break;
             }
         }
